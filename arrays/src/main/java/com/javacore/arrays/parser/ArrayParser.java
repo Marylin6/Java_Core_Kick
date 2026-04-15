@@ -1,6 +1,6 @@
-package main.java.com.javacore.arrays.parser;
+package com.javacore.arrays.parser;
 
-import main.java.com.javacore.arrays.exception.InvalidDataException;
+import com.javacore.arrays.exception.InvalidDataException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,7 @@ public class ArrayParser {
     private static final Pattern NUMBER_PATTERN = Pattern.compile(NUMBER_REGEX);
 
     public double[] parse(String line) throws InvalidDataException {
-        if (line == null || line.isBlank()) {
+        if (line.isBlank()) {
             throw new InvalidDataException("Empty line");
         }
 

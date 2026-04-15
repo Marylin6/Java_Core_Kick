@@ -1,7 +1,6 @@
 package com.javacore.arrays.parser;
 
-import main.java.com.javacore.arrays.exception.InvalidDataException;
-import main.java.com.javacore.arrays.parser.ArrayParser;
+import com.javacore.arrays.exception.InvalidDataException;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
