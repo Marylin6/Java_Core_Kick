@@ -1,6 +1,6 @@
 package com.javacore.arrays.validator;
 
-import main.java.com.javacore.arrays.validator.ArrayValidator;
+import com.javacore.arrays.validator.ArrayValidator;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
