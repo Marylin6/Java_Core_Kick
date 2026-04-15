@@ -1,4 +1,4 @@
-package main.java.com.javacore.arrays.exeption;
+package main.java.com.javacore.arrays.exception;
 
 public class InvalidDataException extends Exception {
 
