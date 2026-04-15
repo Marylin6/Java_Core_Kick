@@ -1,23 +1,20 @@
 package main.java.com.javacore.arrays.validator;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class ArrayValidator {
 
-    private static final String SPLIT_REGEX = "[,;\\s-]+";
     private static final String NUMBER_REGEX = "-?\\d+(\\.\\d+)?";
+    private static final Pattern NUMBER_PATTERN = Pattern.compile(NUMBER_REGEX);
 
     public boolean isValidArray(String line) {
         if (line == null || line.isBlank()) {
             return false;
         }
 
-        String[] parts = line.split(SPLIT_REGEX);
+        Matcher matcher = NUMBER_PATTERN.matcher(line);
 
-        for (String part : parts) {
-            if (!part.matches(NUMBER_REGEX)) {
-                return false;
-            }
-        }
-
-        return true;
+        return matcher.find();
     }
 }
