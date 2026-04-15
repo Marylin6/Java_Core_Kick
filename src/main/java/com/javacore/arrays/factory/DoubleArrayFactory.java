@@ -1,6 +1,6 @@
-package factory;
+package main.java.com.javacore.arrays.factory;
 
-import entity.DoubleArrayEntity;
+import main.java.com.javacore.arrays.entity.DoubleArrayEntity;
 
 public class DoubleArrayFactory {
     private int currentId = 1;

@@ -1,6 +1,6 @@
-package warehouse;
+package main.java.com.javacore.arrays.warehouse;
 
-import entity.ArrayParameters;
+import main.java.com.javacore.arrays.entity.ArrayParameters;
 
 import java.util.HashMap;
 import java.util.Map;

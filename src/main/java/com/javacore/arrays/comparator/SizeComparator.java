@@ -1,6 +1,6 @@
-package comparator;
+package main.java.com.javacore.arrays.comparator;
 
-import entity.DoubleArrayEntity;
+import main.java.com.javacore.arrays.entity.DoubleArrayEntity;
 
 import java.util.Comparator;
 

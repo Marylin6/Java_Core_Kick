@@ -1,6 +1,6 @@
-package service;
+package main.java.com.javacore.arrays.service;
 
-import entity.DoubleArrayEntity;
+import main.java.com.javacore.arrays.entity.DoubleArrayEntity;
 
 import java.util.Optional;
 

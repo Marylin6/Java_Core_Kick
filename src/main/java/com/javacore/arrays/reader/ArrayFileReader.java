@@ -1,4 +1,4 @@
-package reader;
+package main.java.com.javacore.arrays.reader;
 
 import java.io.IOException;
 import java.nio.file.Files;

@@ -1,4 +1,4 @@
-package validator;
+package main.java.com.javacore.arrays.validator;
 
 public class ArrayValidator {
 

@@ -1,7 +1,7 @@
-package repository;
+package main.java.com.javacore.arrays.repository;
 
-import entity.DoubleArrayEntity;
-import specification.Specification;
+import main.java.com.javacore.arrays.entity.DoubleArrayEntity;
+import main.java.com.javacore.arrays.specification.Specification;
 
 import java.util.ArrayList;
 import java.util.List;

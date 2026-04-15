@@ -1,6 +1,6 @@
-package entity;
+package main.java.com.javacore.arrays.entity;
 
-import observer.Observer;
+import main.java.com.javacore.arrays.observer.Observer;
 
 import java.util.ArrayList;
 import java.util.Arrays;

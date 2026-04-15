@@ -1,4 +1,4 @@
-package entity;
+package main.java.com.javacore.arrays.entity;
 
 public class ArrayParameters {
 

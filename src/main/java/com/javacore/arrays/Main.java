@@ -1,3 +1,5 @@
+package main.java.com.javacore.arrays;
+
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 

@@ -1,6 +1,6 @@
-package specification;
+package main.java.com.javacore.arrays.specification;
 
-import entity.DoubleArrayEntity;
+import main.java.com.javacore.arrays.entity.DoubleArrayEntity;
 
 import java.util.logging.Logger;
 

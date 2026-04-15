@@ -1,8 +1,8 @@
-package observer;
+package main.java.com.javacore.arrays.observer;
 
-import entity.ArrayParameters;
-import entity.DoubleArrayEntity;
-import warehouse.Warehouse;
+import main.java.com.javacore.arrays.entity.ArrayParameters;
+import main.java.com.javacore.arrays.entity.DoubleArrayEntity;
+import main.java.com.javacore.arrays.warehouse.Warehouse;
 
 public class ArrayObserver implements Observer {
 
