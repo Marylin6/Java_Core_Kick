@@ -1,8 +1,9 @@
 package com.javacore.arrays.entity;
 
+import java.util.Arrays;
+
 import com.javacore.arrays.observer.Observer;
 
-import java.util.Arrays;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
