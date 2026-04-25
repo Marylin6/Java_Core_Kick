@@ -15,9 +15,7 @@ public class TextParseException extends Exception {
         super(message, cause);
     }
 
-    public TextParseException(String message,
-                              ComponentType componentType,
-                              String inputFragment) {
+    public TextParseException(String message, ComponentType componentType, String inputFragment) {
         super(message);
         this.componentType = componentType;
         this.inputFragment = inputFragment;
