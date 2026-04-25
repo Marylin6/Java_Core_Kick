@@ -6,30 +6,26 @@ import com.javacore.infohandler.util.Regex;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class TextParser extends AbstractParser {
+public class LexemeParser extends AbstractParser {
 
-    private static final Logger logger = LogManager.getLogger();
+    private static final Logger logger = LogManager.getLogger(LexemeParser.class);
 
     @Override
     public void parse(String text, TextComponent parent) throws TextParseException {
 
-        logger.info("Start parsing text");
-
         try {
-            String[] paragraphs = text.split(Regex.PARAGRAPH);
+            String[] lexemes = text.split(Regex.SPACE);
+            for (String lex : lexemes) {
 
-            for (String p : paragraphs) {
-
-                TextComponent paragraph = new TextComposite(ComponentType.PARAGRAPH);
-                parent.add(paragraph);
+                TextComponent lexeme = new TextComposite(ComponentType.LEXEME);
+                parent.add(lexeme);
 
                 if (next != null) {
-                    next.parse(p.trim(), paragraph);
+                    next.parse(lex, lexeme);
                 }
             }
-
         } catch (Exception e) {
-            logger.error("Text parsing failed", e);
+            logger.error("Lexeme parsing failed", e);
 
             throw new TextParseException("Text parsing error", e, ComponentType.TEXT, text);
         }
