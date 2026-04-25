@@ -11,8 +11,7 @@ public class SymbolParser extends AbstractParser {
             LogManager.getLogger(SymbolParser.class);
 
     @Override
-    public void parse(String text, TextComponent parent)
-            throws TextParseException {
+    public void parse(String text, TextComponent parent) throws TextParseException {
 
         try {
             for (char c : text.toCharArray()) {
