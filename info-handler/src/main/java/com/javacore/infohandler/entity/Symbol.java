@@ -5,9 +5,16 @@ import java.util.List;
 public class Symbol implements TextComponent {
 
     private char value;
+    private ComponentType type;
 
     public Symbol(char value) {
         this.value = value;
+
+        if (Character.isLetter(value)) {
+            this.type = ComponentType.LETTER;
+        } else {
+            this.type = ComponentType.PUNCTUATION;
+        }
     }
 
     @Override
@@ -27,6 +34,10 @@ public class Symbol implements TextComponent {
 
     @Override
     public ComponentType getType() {
-        return ComponentType.SYMBOL;
+        return type;
+    }
+
+    public char getValue() {
+        return value;
     }
 }

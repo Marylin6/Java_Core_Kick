@@ -7,8 +7,7 @@ import org.apache.logging.log4j.Logger;
 
 public class SymbolParser extends AbstractParser {
 
-    private static final Logger logger =
-            LogManager.getLogger(SymbolParser.class);
+    private static final Logger logger = LogManager.getLogger(SymbolParser.class);
 
     @Override
     public void parse(String text, TextComponent parent) throws TextParseException {
