@@ -16,16 +16,13 @@ public class TextOperationService {
             for (TextComponent sentence : paragraph.getChildren()) {
 
                 Set<String> wordsInSentence = new HashSet<>();
-
                 for (TextComponent lexeme : sentence.getChildren()) {
 
                     String word = extractWord(lexeme);
-
                     if (!word.isEmpty()) {
                         wordsInSentence.add(word.toLowerCase());
                     }
                 }
-
                 for (String word : wordsInSentence) {
                     wordCount.put(word, wordCount.getOrDefault(word, 0) + 1);
                 }
@@ -33,7 +30,6 @@ public class TextOperationService {
         }
 
         int max = 0;
-
         for (int count : wordCount.values()) {
             if (count > max) {
                 max = count;
@@ -46,7 +42,6 @@ public class TextOperationService {
     public List<TextComponent> sortSentencesByLetter(TextComponent root, char letter) {
 
         List<TextComponent> sentences = new ArrayList<>();
-
         for (TextComponent paragraph : root.getChildren()) {
             sentences.addAll(paragraph.getChildren());
         }
@@ -61,7 +56,6 @@ public class TextOperationService {
             for (TextComponent sentence : paragraph.getChildren()) {
 
                 List<TextComponent> lexemes = sentence.getChildren();
-
                 if (lexemes.size() < 2) {
                     continue;
                 }

@@ -13,8 +13,7 @@ public class FileReaderUtil {
     private static final Logger logger =
             LogManager.getLogger(FileReaderUtil.class);
 
-    public static String readFile(String path)
-            throws TextParseException {
+    public static String readFile(String path) throws TextParseException {
 
         try {
             logger.info("Reading file: {}", path);

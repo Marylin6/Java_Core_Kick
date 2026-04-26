@@ -12,6 +12,9 @@ public class TextParser extends AbstractParser {
 
     @Override
     public void parse(String text, TextComponent parent) throws TextParseException {
+        if (text == null) {
+            throw new TextParseException("Text is null", ComponentType.TEXT, null);
+        }
 
         logger.info("Start parsing text");
 
@@ -30,7 +33,6 @@ public class TextParser extends AbstractParser {
 
         } catch (Exception e) {
             logger.error("Text parsing failed", e);
-
             throw new TextParseException("Text parsing error", e, ComponentType.TEXT, text);
         }
     }

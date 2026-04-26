@@ -10,6 +10,9 @@ public class TextAnalysisService {
         if (component.getType() == ComponentType.LETTER) {
             return 1;
         }
+        else if (component.getType() == ComponentType.PUNCTUATION) {
+            return 0;
+        }
 
         for (TextComponent child : component.getChildren()) {
             count += countLetters(child);
